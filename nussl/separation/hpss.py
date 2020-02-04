@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import mask_separation_base
-import masks
-from ..core import constants
-import librosa
 import copy
 
+import numpy as np
+import librosa
+
+from . import mask_separation_base
+from . import masks
+from ..core import constants
 
 class HPSS(mask_separation_base.MaskSeparationBase):
     """Implements harmonic/percussive source separation based on:

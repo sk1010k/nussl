@@ -9,8 +9,8 @@ import numpy as np
 import scipy.fftpack as scifft
 import scipy.spatial.distance
 
-import mask_separation_base
-import masks
+from . import mask_separation_base
+from . import masks
 from ..core import constants
 
 

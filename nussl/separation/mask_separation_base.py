@@ -8,8 +8,8 @@ Base class for separation algorithms that make masks. Most algorithms in nussl a
 import json
 import warnings
 
-import masks
-import separation_base
+from . import masks
+from . import separation_base
 from ..core import utils
 from ..core import audio_signal
 from ..core import constants
